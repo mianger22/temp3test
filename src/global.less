@@ -1,0 +1,94 @@
+@import './theme/swiss.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-pro-sider-logo h1 {
+  height: auto;
+}
+.ant-menu.ant-menu-dark {
+  color: white;
+}
+.ant-pro-sider {
+  background-color: @primary-color;
+
+  .ant-menu-inline.ant-menu-sub {
+    background-color: @primary-color;
+  }
+
+  .ant-menu-item>a {
+    color: white;
+  }
+
+  .anticon {
+    color: white;
+  }
+
+  .ant-pro-menu-item-title {
+    color: white;
+  }
+  .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: white;
+    span {
+      color: @primary-color;
+    }
+  }
+}
+.ant-picker-time-panel-column:nth-of-type(3) {
+  display: none;
+}

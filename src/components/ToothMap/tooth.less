@@ -1,0 +1,77 @@
+.container {
+  width: 414px;
+  display: flex;
+  flex-direction: column;
+  .side {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .number {
+    width: 23px;
+    height: 23px;
+    border-radius: 11.5px;
+    font-size: 12pt;
+    line-height: 22px;
+    padding: 0 0 2px 2.8px;
+  }
+
+  .number.selected {
+    background-color: rgb(24, 24, 24);
+    color: white
+  }
+
+  .item {
+    .ant-select-selector {
+      height: 65px;
+    }
+
+    cursor: pointer;
+    width: 23px;
+    margin: 0 1.5px 1.5px 1.5px;
+
+
+
+    .nerve {
+      width: 23px;
+      height: 40px;
+      margin-top: -3px;
+    }
+
+    .available {
+      width: 23px;
+      height: 58px;
+    }
+
+    .health {
+      width: 23px;
+      height: 98px;
+      position: relative;
+      margin-top: -98px;
+      // background-color: rgba(14, 95, 133, 0.2);
+      > img {
+        position: absolute;
+        top:0
+      }
+    }
+  }
+
+  .item.can_edit {
+    :hover {
+      background-color: rgba(24, 67, 73, 0.267);
+
+    }
+  }
+
+}
+
+.top_line {
+  position: relative;
+  margin-top: 40px;
+  width: 414px;
+}
+.bottom_line {
+  position: relative;
+  margin-top: 40px;
+  width: 414px;
+}
